@@ -2435,7 +2435,7 @@ padding-right:0px ;
 }
 @media (max-width :600px) {
     .not-in-mobile{
-        display: none;
+        display: none !important;
     }
 }
 @media (min-width : 1600px) {
