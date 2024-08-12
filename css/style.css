@@ -2438,6 +2438,12 @@ padding-right:0px ;
         display: none !important;
     }
 }
+/* Hide on screen rotation */
+@media only screen and (orientation: landscape) {
+   .not-in-mobile{
+        display: none !important;
+    }
+}
 @media (min-width : 1600px) {
     .licence-dates{
         gap: 40px;  
