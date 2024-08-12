@@ -2433,7 +2433,7 @@ padding-right:0px ;
     }
     
 }
-@media (max-width :700px) {
+@media (max-width :768px) {
     .not-in-mobile{
         display: none !important;
     }
