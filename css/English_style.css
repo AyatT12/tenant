@@ -94,7 +94,7 @@ textarea{
 }
 input[type="date"] {
     padding:5px 10px;
-  position: relative;
+    position: relative;
     text-align: start;
 }
 
@@ -160,6 +160,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 /* ////////// */
+.form-select {
+     background-position: right .75rem center !important;
+     direction: ltr;
+     padding: .2rem 2rem .2rem .75rem;
+     height: 35px;
+}
+
 .form-select-last {
     text-align: end;
 }
