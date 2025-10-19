@@ -25,136 +25,380 @@
         <div id="content">
             <header class="header">
                 <div class="navbar-area">
-
-                    <nav class="navbar navbar-expand navbar-light topbar mb-2 static-top   justify-content-between" style="height:100px">
-                       
+                    <!-- Topbar -->
+                    <nav class="navbar navbar-expand navbar-light topbar mb-2 static-top   justify-content-between"
+                        style="height:100px">
                     </nav>
                 </div>
             </header>
             <div class="container-fluid">
                 <section class="section-mainCard">
                     <div class="row justify-content-center w-100 h-100">
-                        <div class="col-xl-10 text-center ">
+                        <div class="col-xl-10 text-center">
                             <div class="card main-card ">
-                               <div class="col-md-12">
+                                <!-- edited -->
+                                <div class="col-md-12">
                                     <div class="row py-2 align-items-center">
-                                        <div class="col-auto d-flex">
+                                        <div class="col-auto d-flex gap-3">
                                             <a href="https://ayatt12.github.io/BnanBranch/" style="width: fit-content;">
-                                                <div> <img src="img/Close.svg" alt="close_icon" class="close-icon">
+                                                <div>
+                                                    <img src="img/Close.svg" alt="close_icon" class="close-icon">
+                                                </div>
+                                            </a>
+                                            <a href="index.html" style="width: fit-content;">
+                                                <div>
+                                                    <img src="img/Arrow_Left.svg" alt="back_icon" class="back-icon">
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col">
-                                            <h1 class="card-title">المستأجرين</h1>
+                                        <div class="col justify-content-center d-flex title-row">
+                                            <h1 class="card-title"> البيانات التفصيلية للمستأجر </h1>
                                         </div>
                                     </div>
                                 </div>
-                               <div class="col-md-12" style="flex: 1;min-height: 0;">
-                                    <div class="row justify-content-center h-100 content-row">
+                                <div class="col-md-12" style="flex: 1;min-height: 0;">
+                                    <div class="row justify-content-center content-row h-100">
                                         <div class="col-md-11 h-100">
-                                            <form id="tenant-form">
+
+                                            <form id="tenant-details-form">
+
                                                 <fieldset>
+
                                                     <div class="form-card card-tables">
-                                                         <!-- edited -->
-                                                        <div class="row pb-4 seacrh-row gap-4"
-                                                            style="flex-direction: row-reverse;justify-content: space-between;">
-                                                            <div class="col-12">
-                                                             <div class="row flex-row-reverse align-items-center ">
-                                                                 <div class="col-auto">
-                                                                    <label for="search" class="mb-0"> بحث</label>
-                                                                </div>
+                                                        <!-- edited -->
+                                                        <div class="row" style="flex-direction:row-reverse">
+                                                            <div class="col-md-6 data-col ">
                                                                 <div class="col-auto">
-                                                                    <div class="form-outline" data-mdb-input-init>
-                                                                        <span class="fa fa-search"></span>
-                                                                        <input type="search" id="search"
-                                                                            class="form-control inputs" name="search"
-                                                                            aria-label="Search" autofocus />
-                                                                    </div>
+                                                                    <P>الاسم</P>
                                                                 </div>
-                                                             </div>
-                                                            </div>
-                                                            <div class="col-12 d-flex  radio-container"
-                                                                style="flex-direction: row-reverse;flex-wrap: wrap;">
-                                                                <div class="form-check form-check-inline">
-                                                                     <label class="form-check-label"
-                                                                        for="all">الكل</label>
-                                                                    <input class="form-check-input custom" type="radio"
-                                                                        name="Options" id="all" value="All" checked />
-                                                                </div>
-
-                                                                <div class="form-check form-check-inline">
-                                                                    <label class="form-check-label active"
-                                                                        for="active">نشط</label>
-                                                                    <input class="form-check-input custom" type="radio"
-                                                                        name="Options" id="active" value="active" />
-                                                                </div>
-
-                                                                <div class="form-check form-check-inline">
-                                                                    <label class="form-check-label tenant"
-                                                                        for="tenant">مستأجر</label>
-                                                                    <input class="form-check-input custom" type="radio"
-                                                                        name="Options" id="tenant" value="tenant" />
+                                                                <div class="col-auto personal-data">
+                                                                    <P> أسيل عبدالودود عامر المعمر</P>
                                                                 </div>
                                                             </div>
-
-
+                                                            <div class="col-md-6 data-col not-in-mobile">
+                                                                <div class="col-auto">
+                                                                    <P>العضوية</P>
+                                                                </div>
+                                                                <div class="col-auto personal-data">
+                                                                    <P> مشترك</P>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                      <!-- -------- -->
-                                                      <!-- edited -->
+                                                        <div class="row not-in-mobile"
+                                                            style="flex-direction:row-reverse">
 
-                                                        <div class="row table-row">
-                                                            <div class="col  scroll-table-div  Tenants-table-div  table-responsive-sm">
-                                                                <table  class=" tables-style table table-borderless " id="Tenants-Table">
+                                                            <div class="col-md-6 data-col ">
+                                                                <div class="col-auto">
+                                                                    <P>المهنة</P>
+                                                                </div>
+                                                                <div class="col-auto personal-data">
+                                                                    <P> مهندس</P>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-auto data-col ">
+                                                                <div class="col-auto">
+                                                                    <P>جهة العمل</P>
+                                                                </div>
+                                                                <div class="col-auto personal-data">
+                                                                    <P>المكتب التعاوني للدعوة والإرشاد وتوعية الجاليات
+                                                                        بمحافظة صبيا
+
+                                                                    </P>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row" style="flex-direction:row-reverse">
+                                                            <div class="col-md-6 data-col  ">
+                                                                <div class="col-auto">
+                                                                    <P>رخصة القيادة</P>
+                                                                </div>
+                                                                <div class="col-auto personal-data">
+                                                                    <P>خصوصي</P>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 data-col ">
+                                                                <div class="col-auto">
+                                                                    <P> نهايتها</P>
+                                                                </div>
+                                                                <div class="col-auto personal-data">
+                                                                    <P class="contract-id"> 2023/02/03</P>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row not-in-mobile"
+                                                            style="flex-direction:row-reverse;">
+                                                            <div class="col-md-12 data-col" style="flex-wrap:wrap;">
+                                                                <div class="col-auto">
+                                                                    <P>العنوان</P>
+                                                                </div>
+                                                                <div class="col-auto personal-data" style="justify-content: flex-end;
+                                                         display: flex;">
+                                                                    <P> الرياض - حي الشهداء - عمارة 12 - طابق رابع -
+                                                                        وحدة سكنية 6 </P>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- edited -->
+
+                                                        <div class="row table-row ">
+                                                            <div class="col  scroll-table-div   table-responsive-sm  "
+                                                                id="Table-details">
+                                                                <table class=" tables-style table table-borderless ">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th scope="col" >التقييم</th>
-                                                                            <th scope="col"> الرصيد المحجوز </th>
-                                                                            <th scope="col">الرصيد  المتاح </th>
-                                                                            <th scope="col" >الرصيد</th>
-                                                                            <th scope="col" >عدد العقود</th>
-                                                                            <th scope="col">آخر زيارة</th>
-                                                                            <th scope="col" class="tenat firstTable-col">الاسم</th>
+                                                                            <th scope="col"> العقد</th>
+                                                                            <th scope="col">الفاتورة </th>
+                                                                            <th scope="col"> قيمة العقد</th>
+                                                                            <th scope="col"
+                                                                                class="not-in-mobile text-end">السيارة
+                                                                            </th>
+                                                                            <th scope="col" class="firstTable-col">
+                                                                                رقم العقد	</th>
                                                                             <th></th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                     <tr>
-
-                                                                            <td >ممتاز</td>
-                                                                            <td>132</td>
-                                                                            <td>00.00</td>
-                                                                            <td >1.000.000.00</td>
-                                                                            <td>1</td>
-                                                                            <td >2023/02/04</td>
-                                                                            <td class="tenat firstTable-col">
+                                                                        <tr>
+                                                                            <td class="text-center">
+                                                                                <a href="#">
+                                                                                    <img src="img/contract.svg" class="pdf-Tableicons" alt="pdf file link icon"></a>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <a href="#"><img
+                                                                                        src="img/Invoice.svg" class="pdf-Tableicons"
+                                                                                        alt="pdf file link icon"></a>
+                                                                            </td>
+                                                                            <td>6,471.00</td>
+                                                                            <td class="not-in-mobile text-end">نيسان -
+                                                                                التيما - سيدان متوسطة - 2021 - و ب ط
+                                                                                2011 - أصفر</td>
+                                                                            <td class="firstTable-col">
                                                                                 <div class="row flex-nowrap">
-                                                                                 <div class="col">
-                                                                                    <p> أسيل عبدالودود عامر المعمر </p>
-                                                                                     <p class="Tenant-id">901308085787929</p>
-                                                                                 </div>
-                                                                              
+                                                                                    <div class="col">
+                                                                                        <p class="contract-id"> 24-1401-4001105-000078 </p>
+                                                                                        <div
+                                                                                            class="row licence-dates-settel">
+                                                                                            <div
+                                                                                                class="col-auto date-col">
+                                                                                                <div class="d-flex">
+                                                                                                    <div
+                                                                                                        class="col settelDate">
+                                                                                                        2024/08/22
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-auto p-0">
+                                                                                                        11:12</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-auto date-col">
+                                                                                                <div class="d-flex">
+                                                                                                    <div
+                                                                                                        class="col settelDate">
+                                                                                                        2024/07/19
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-auto p-0">
+                                                                                                        11:12</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
                                                                                 </div>
-                                                                             
-                                                                                
-                                                                             </td>
-                                                                             <td>   
-                                                                                
+
+
+                                                                            </td>
+                                                                            <td>
+
                                                                                 <div class="status-number gap-2">
-                                                                                <div class="status blue-state"></div>
-                                                                                <div>3</div>
-                                                                               </div>
-                                                                        
-                                                                        </td>
+                                                                                    <div class="status red-state">
+                                                                                    </div>
+                                                                                    <div>1</div>
+
+                                                                                </div>
+                                                                            </td>
+
                                                                         </tr>
-                                                                     
+                                                                        <tr>
+                                                                           
+                                                                          <td class="text-center">
+                                                                                <a href="#"><img
+                                                                                        src="img/contract.svg" class="pdf-Tableicons"
+                                                                                        alt="pdf file link icon"></a>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <a href="#"><img
+                                                                                        src="img/Invoice.svg" class="pdf-Tableicons"
+                                                                                        alt="pdf file link icon"></a>
+                                                                            </td>
+                                                                            <td>4,042.87</td>
+                                                                            <td class="not-in-mobile text-end">تويوتا - يارس -  اقتصادية - 2020 - ل ق ب 4749 - أخضر</td>
+                                                                            <td class="firstTable-col">
+                                                                                <div class="row flex-nowrap">
+                                                                                    <div class="col">
+                                                                                        <p class="contract-id"> 25-1401-4001100-000045 </p>
+                                                                                        <div class="row licence-dates-settel">
+                                                                                            <div class="col-auto date-col">
+                                                                                                <div class="d-flex">
+                                                                                                    <div
+                                                                                                        class="col settelDate">
+                                                                                                        2025/10/13
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-auto p-0">
+                                                                                                        11:12</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+
+                                                                            </td>
+                                                                            <td>
+
+                                                                                <div class="status-number gap-2">
+                                                                                    <div class="status green-state">
+                                                                                    </div>
+                                                                                    <div>2</div>
+
+                                                                                </div>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td class="text-center">
+                                                                                <a href="#"><img
+                                                                                        src="img/contract.svg" class="pdf-Tableicons"
+                                                                                        alt="pdf file link icon"></a>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <a href="#"><img
+                                                                                        src="img/Invoice.svg" class="pdf-Tableicons"
+                                                                                        alt="pdf file link icon"></a>
+                                                                            </td>
+                                                                            <td>782.00</td>
+                                                                            <td class="not-in-mobile text-end">تويوتا - يارس -  اقتصادية - 2020 - ل ق ب 4749 - أخضر</td>
+                                                                            <td class="firstTable-col">
+                                                                                <div class="row flex-nowrap">
+                                                                                    <div class="col">
+                                                                                        <p class="contract-id"> 25-1401-4001100-000041 </p>
+                                                                                        <div
+                                                                                            class="row licence-dates-settel">
+                                                                                            <div
+                                                                                                class="col-auto date-col">
+                                                                                                <div class="d-flex">
+                                                                                                    <div
+                                                                                                        class="col settelDate">
+                                                                                                        2024/08/22
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-auto p-0">
+                                                                                                        11:12</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-auto date-col">
+                                                                                                <div class="d-flex">
+                                                                                                    <div
+                                                                                                        class="col settelDate">
+                                                                                                        2024/07/19
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-auto p-0">
+                                                                                                        11:12</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+
+                                                                            </td>
+                                                                            <td>
+
+                                                                                <div class="status-number gap-2">
+                                                                                    <div class="status red-state">
+                                                                                    </div>
+                                                                                    <div>3</div>
+
+                                                                                </div>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                       <td class="text-center">
+                                                                                <a href="#"><img
+                                                                                        src="img/contract.svg" class="pdf-Tableicons"
+                                                                                        alt="pdf file link icon"></a>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <a href="#"><img
+                                                                                        src="img/Invoice.svg" class="pdf-Tableicons"
+                                                                                        alt="pdf file link icon"></a>
+                                                                            </td>
+                                                                            <td>2,525.00</td>
+                                                                            <td class="not-in-mobile text-end">فورد - تورس -  سيدان متوسطة - 2019 - أ ى هـ 3436 - أبيض	</td>
+                                                                            <td class="firstTable-col">
+                                                                                <div class="row flex-nowrap">
+                                                                                    <div class="col">
+                                                                                        <p class="contract-id"> 24-1401-4001100-000031 </p>
+                                                                                        <div
+                                                                                            class="row licence-dates-settel">
+                                                                                            <div
+                                                                                                class="col-auto date-col">
+                                                                                                <div class="d-flex">
+                                                                                                    <div
+                                                                                                        class="col settelDate">
+                                                                                                        2024/08/22
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-auto p-0">
+                                                                                                        11:12</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-auto date-col">
+                                                                                                <div class="d-flex">
+                                                                                                    <div
+                                                                                                        class="col settelDate">
+                                                                                                        2024/07/19
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-auto p-0">
+                                                                                                        11:12</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+
+                                                                            </td>
+                                                                            <td>
+
+                                                                                <div class="status-number gap-2">
+                                                                                    <div class="status red-state">
+                                                                                    </div>
+                                                                                    <div>4</div>
+
+                                                                                </div>
+                                                                            </td>
+
+                                                                        </tr>
+
+
+
                                                                     </tbody>
                                                                 </table>
                                                             </div>
                                                         </div>
-                                                      <!-- -------- -->
-
                                                     </div>
-
 
                                                 </fieldset>
 
@@ -179,79 +423,12 @@
                 </div>
 
             </footer>
-            <div class="modal fade" id="PasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  ">
-                <div class="modal-content">
-                    <form class="needs-validation" novalidate>
-                        <div class="modal-header password-modal-header mb-2">
-                            <p class="card-title">تغيير كلمة السر</p>
-                            <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><img src="img/cancel.png"></span>
-                            </button>
-                        </div>
-                        <div class="modal-body p-0 password-modal-body">
-                            <div class="account-container password-container p-4">
-                                <div class="row gap-2">
-                                    <div class="col-md-12 ">
-                                        <div class="row flex-row-reverse">
-                                            <div class="col-md-5 pass-titles">
-                                                <label for="current_pass">كلمة السر الحالية</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="password" id="current_pass" class="password-input"
-                                                    name=" current passowrd" autocomplete="off">
-                                                <div class="row requird-field">
-                                                    <p style="display:none;"> هذا الحقل مطلوب</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="row flex-row-reverse">
-                                            <div class="col-md-5 pass-titles">
-                                                <label for="New_pass">كلمة السر الجديدة </label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="password" id="New_pass" class="password-input"
-                                                    name="new passowrd" autocomplete="off">
-                                                <div class="row requird-field">
-                                                    <p style="display:none;">هذا الحقل مطلوب</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="row flex-row-reverse">
-                                            <div class="col-md-5 pass-titles">
-                                                <label for="New_pass_reenter">تأكيد كلمة السر الجديدة </label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="password" id="New_pass_reenter" class="password-input"
-                                                    name="new passowrd reenter" autocomplete="off">
-                                                <div class="row requird-field">
-                                                    <p style="display:none;">هذا الحقل مطلوب</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer password-save-button-row" id="passowrd-save">
-                            <button type="submit" class="btn password-btn-custom ">حفظ</button>
-                        </div>
-    
-                    </form>
-                </div>
-            </div>
-        </div>
+           
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <script src="js/tenant.js"></script>
 </body>
 
 </html>
