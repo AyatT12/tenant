@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -873,7 +873,17 @@ footer {
     margin: 0px;
     margin-bottom: 10px;
 }
-
+@media (max-width:768px) {
+    .paid-order{
+        order: 2;
+    }
+    .credit-order{
+        order: 3;
+    }
+    .debit-order{
+        order: 4;
+    }
+}
 /* ///////////////////////////////////////////extension1////////////////////////////////////// */
 #extensionTable tr {
     cursor: pointer;
@@ -2327,11 +2337,6 @@ input[type=checkbox] {
 
 }
 
-@media (max-width :600px) {
-    .not-in-mobile {
-        display: none;
-    }
-}
 
 @media (min-width : 1600px) {
     .licence-dates {
@@ -2409,7 +2414,6 @@ input[type=checkbox] {
 #custody-table-div {
     height: 40vh;
 }
-
 
 
 /* /////////////////////////////////////OTP-modal////////////////////////////////////////////////////// */
@@ -2998,6 +3002,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /*  */
 @media (max-width : 500px) {
     .container-fluid {
-        height: 80vh;
+        height: 75vh;
     }
+    .form-card{
+        height: 65vh;
+    }
+    .Hidden-word{
+        display: none;
+    }
+}
+@media (max-width:991px) {
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+    .user-name {
+       margin-bottom: .2rem;
+    }
+
 }
