@@ -493,18 +493,7 @@ nav {
     position: relative;
     height: 62vh;
     overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.layout-row {
-    align-items: center;
-    justify-content: center;
-    height: 88%;
-}
-
-.custody-layout-row {
-    height: 85%;
-
+    /* overflow-x: hidden; */
 }
 
 #custody-form,
@@ -2947,7 +2936,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .increment {
     width: 15px;
     height: 15px;
-    background-image: url("./images/up.svg");
+    background-image: url("../img/up.svg");
     background-size: contain;
     background-repeat: no-repeat;
     border: none;
@@ -2963,7 +2952,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .deincrement {
     width: 15px;
     height: 15px;
-    background-image: url(./images/down1.svg);
+    background-image: url("../img/down1.svg");
     background-size: contain;
     background-repeat: no-repeat;
     border: none;
@@ -3004,5 +2993,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media (max-width : 991px) {
     .acoount-cards-row {
         flex-direction: column-reverse;
+    }
+}
+/*  */
+@media (max-width : 500px) {
+    .container-fluid {
+        height: 80vh;
     }
 }
