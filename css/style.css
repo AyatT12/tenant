@@ -873,16 +873,34 @@ footer {
     margin: 0px;
     margin-bottom: 10px;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .paid-order{
         order: 2;
+        min-width: 50%;
     }
     .credit-order{
         order: 3;
+        min-width: 50%;
+
     }
     .debit-order{
         order: 4;
+        min-width: 50%;
     }
+
+    .Report-reserved-balance{
+        min-width: 50%;
+    }
+    .Report-avaliable-balance{
+        min-width: 50%;
+    }
+    .report-credit{
+        min-width: 50%;
+    }
+    .report-debit{
+        min-width: 50%;
+    }
+
 }
 /* ///////////////////////////////////////////extension1////////////////////////////////////// */
 #extensionTable tr {
