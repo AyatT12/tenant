@@ -5,7 +5,9 @@
 
 /*Background color*/
 body {
+    background-color:rgba(254, 248, 232, 1);
     min-height: 100dvh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -521,6 +523,7 @@ fieldset {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 
@@ -879,21 +882,37 @@ footer {
     margin: 0px;
     margin-bottom: 10px;
 }
-
-@media (max-width:767px) {
+@media (max-width:1399.98px) {
+     .Available-order {
+        order: 1;
+    }
     .paid-order {
         order: 2;
-        min-width: 50%;
     }
 
     .credit-order {
         order: 3;
+
+    }
+    
+    .debit-order {
+        order: 4;
+    }
+}
+@media (max-width:767px) {
+    .Available-order {
+        min-width: 50%;
+    }
+    .paid-order {
+        min-width: 50%;
+    }
+
+    .credit-order {
         min-width: 50%;
 
     }
-
+    
     .debit-order {
-        order: 4;
         min-width: 50%;
     }
 
@@ -914,6 +933,7 @@ footer {
     }
 
 }
+
 
 /* ///////////////////////////////////////////extension1////////////////////////////////////// */
 #extensionTable tr {
@@ -1007,7 +1027,7 @@ footer {
 /* =========================================================================Settlement ==================================================== */
 /* Hide all except first fieldset */
 #SettlementForm .form-card {
-    height: 62vh;
+flex:1;
 }
 
 #SettlementForm fieldset:not(:first-of-type) {
@@ -1357,12 +1377,6 @@ footer {
 
 }
 
-/***************************************************ميديا شاشة التسوية **************************************************/
-@media (max-height: 786px) {
-    #SettlementForm .form-card {
-        height: 55vh;
-    }
-}
 
 /***************************************************cards-media**************************************************/
 
@@ -2268,7 +2282,6 @@ input[type=checkbox] {
 
 .Receipt_Col {
     width: 60px !important;
-    /* أو أي عرض تفضله */
     min-width: 60px !important;
     max-width: 80px !important;
     text-align: center;
@@ -3091,14 +3104,15 @@ fieldset {
 }
 
 .form-card {
- 
+    height: 70vh;
+    max-height: calc(100% - 65px);
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 /* REPORT LAYOUT STRUCTURE */
 .reportTable-div {
-    height: 53vh !important;
+    height: 52vh !important;
 }
 
 @media(max-width:1399.98px) {
@@ -3126,7 +3140,7 @@ fieldset {
 /* Tenant LAYOUT STRUCTURE */
 
 #Table-details {
-    height: 50vh;
+    height: 47vh;
 }
 @media(max-width:1399.98px) {
     #Table-details {
