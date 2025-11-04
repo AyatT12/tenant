@@ -1346,14 +1346,6 @@ footer {
 
 
 
-.sett_checkField {
-    display: flex;
-    align-items: baseline;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-
-}
-
 #SettlementTable .form-check-label {
     color: #000;
 }
@@ -3180,13 +3172,13 @@ fieldset {
     }
 
     .expenses-compensation-TableColumn {
-        max-height: 40%;
+        /* max-height: 40%; */
         height: fit-content;
     }
 
     .expensesRow {
         flex: 1;
-        min-height: 550px;
+        min-height:fit-content;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -3198,6 +3190,11 @@ fieldset {
 
 }
 /* العقود المحفوظة - قيمة العقد */
+@media (max-width:1399.98px) {
+    .ContractNumber-SavedContracts{
+        min-height: 67px;
+    }
+}
 @media (min-width:991px) {
     #dropdown-content-contractValue{
       right: 50px;
@@ -3212,7 +3209,7 @@ fieldset {
     #reportTable {
         font-size: 15px;
     }
-    .report-card {
+    .report-card , .Tenant-card{
         font-size: 15px;
     }
 }
@@ -3230,6 +3227,24 @@ fieldset {
     .scroll-table-div {
         padding: 0;
     }
+    .Profession-col{
+        order: 2;
+    }
+    .Membership-col{
+        order: 3;
+    }
+    .Workplace-col{
+        order: 4;
+    }
+    .DrivingLicence-col{
+        order: 5;
+    }
+    .LicenceEnd-col{
+        order: 6;
+    }
+    .Adress-col{
+        order: 7;
+    }
 }
 /*  mobile   */
 @media (max-width:767px) {
@@ -3242,7 +3257,7 @@ fieldset {
     .tables-style {
        font-size: 12px;
     }
-    .report-card {
+    .report-card ,.Tenant-card{
         font-size: 12px;
     }
     .Credit-debit-col {
