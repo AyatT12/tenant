@@ -3228,10 +3228,10 @@ fieldset {
         padding: 0;
     }
     .Profession-col{
-        order: 2;
+        order: 3;
     }
     .Membership-col{
-        order: 3;
+        order: 2;
     }
     .Workplace-col{
         order: 4;
